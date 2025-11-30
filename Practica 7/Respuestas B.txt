@@ -1,0 +1,17 @@
+1. ¿Qué ventaja tiene la lista circular frente a la simple?
+
+La ventaja de la lista circular es que nunca “se rompe”. En vez de terminar en NULL, el último nodo regresa al primero, así que puedo recorrerla completa todas las veces que quiera sin reiniciar nada. Es más práctica cuando necesitas ciclos continuos o cuando quieres que la lista sea totalmente recorrible sin un final fijo.
+
+2. ¿Qué error puede causar un bucle infinito en una lista circular?
+
+Olvidar poner la condición que detiene el recorrido. Si no checo cuándo el puntero ya regresó a la cabeza, se queda dando vueltas para siempre. Esto pasa mucho cuando uno copia el código de la lista simple y no cambia la lógica del while.
+
+3. ¿Qué estructuras o programas del mundo real se basan en listas circulares?
+
+El algoritmo round robin del sistema operativo cuando reparte tiempo entre procesos.
+
+Los reproductores que repiten una lista sin parar.
+
+Buffers circulares y estructuras donde los datos están rotando constantemente.
+
+Básicamente, cualquier sistema que necesita “dar vueltas” sin detenerse usa alguna idea parecida a una lista circular.
