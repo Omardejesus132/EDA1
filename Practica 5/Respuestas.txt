@@ -1,0 +1,8 @@
+1. ¿Qué diferencias notaron entre el orden de salida de la pila y de la cola?
+En la práctica noté que la pila saca los elementos en orden LIFO, el último que metí fue el primero que salió. En cambio, la cola funciona al revés, usa un orden FIFO, así que el primer elemento que ingresé fue también el primero que se desencoló. Básicamente, la pila trabaja como una pila de objetos y la cola como una fila normal.
+
+2. ¿Qué sucede si intentan hacer pop en una pila vacía o dequeue en una cola vacía?
+Cuando intenté hacer pop en la pila estando vacía, el programa marcó un error indicando que no había elementos para sacar. Lo mismo ocurrió con la cola al hacer dequeue: si está vacía, simplemente no se puede quitar nada y aparece un mensaje de error.
+
+3. ¿Qué sucede si intentan insertar más elementos que la capacidad máxima?
+Tanto en la pila como en la cola, si trato de meter más de los 5 elementos permitidos, el programa no me deja y muestra un mensaje avisando que ya está llena. Es decir, no permite agregar más datos una vez que se llegó al límite.
