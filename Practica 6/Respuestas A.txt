@@ -1,0 +1,11 @@
+1. ¿Por qué en la cola circular no se desperdician posiciones como en la cola lineal?
+
+Porque en la cola circular los índices van dando la vuelta con el módulo, entonces cuando el frente avanza y deja espacios libres, esos lugares se pueden volver a usar. A diferencia de la cola lineal, aquí no se quedan posiciones perdidas al principio del arreglo.
+
+2. ¿Qué pasa cuando el índice final llega al final del arreglo?
+
+Cuando el índice final llega a la última casilla, simplemente se reinicia y vuelve a la posición 0. Eso pasa por la operación (final + 1) % MAX, que hace que el movimiento sea circular.
+
+3. ¿Qué sucede si intentas encolar cuando la cola está llena?
+
+Si intento encolar estando la cola llena, no se puede agregar nada más. La operación falla y solo se muestra un mensaje indicando que ya no hay espacio.

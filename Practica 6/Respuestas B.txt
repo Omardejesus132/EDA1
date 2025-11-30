@@ -1,0 +1,13 @@
+1. ¿Qué diferencia tiene el deque frente a la cola circular normal?
+
+La diferencia es que el deque me deja insertar y eliminar por los dos lados, tanto por el frente como por el final. En cambio, la cola circular normal solo permite encolar por atrás y desencolar por el frente. Por eso el deque es más flexible y se puede usar como cola o como pila.
+
+2. ¿Qué operaciones permiten simular tanto FIFO como LIFO?
+
+Para simular FIFO uso insert_rear() y delete_front().
+Para simular LIFO puedo usar insert_front() y delete_front(), o también insert_rear() y delete_rear().
+Entonces, dependiendo de qué funciones use, el deque se comporta como una cola o como una pila.
+
+3. ¿Qué aplicaciones prácticas tiene un deque?
+
+El deque sirve en casos donde necesito trabajar por ambos extremos sin gastar mucho tiempo. Por ejemplo: historiales (como cuando navegas hacia adelante y atrás), ciertos algoritmos que necesitan insertar y quitar rápido por los dos lados, simulaciones, estructuras temporales de datos. En general es útil cuando no basta con una cola normal.
